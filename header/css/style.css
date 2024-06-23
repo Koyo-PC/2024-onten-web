@@ -1,0 +1,119 @@
+@charset "UTF-8";
+.sp {
+  display: none;
+}
+
+.header_sp {
+  display: none;
+}
+
+.header {
+  padding-bottom: 5px;
+}
+.header__nav {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding-bottom: 5px;
+}
+.header__nav_img {
+  width: 100px;
+  height: 100px;
+  position: fixed;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.header__nav__content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.header__nav__content_link {
+  padding-top: 10px;
+  cursor: pointer;
+  transition: 0.2s cubic-bezier(0.45, 0, 0.55, 1);
+  font-size: 16px;
+  padding-bottom: 10px;
+  position: relative;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.header__nav__content_link:hover:not(.header__nav_img) {
+  background-color: #ede9e9;
+}
+
+#hamburgermenu {
+  position: relative;
+  width: 40px;
+  height: 40px;
+}
+
+/* 要素のサイズ計算を容易にする */
+#hamburgermenu,
+#hamburgermenu * {
+  box-sizing: border-box;
+}
+
+/* メニューアイコン */
+.hamburgermenu__icon {
+  margin: 8px;
+}
+
+.hamburgermenu__icon:hover {
+  cursor: pointer; /* アイコンにマウスカーソルを合わせるとカーソルのアイコンを変える */
+}
+
+/* ナビゲーション */
+.hamburgermenu__nav {
+  position: fixed;
+  width: 300px;
+  max-width: 80%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  padding: 8px;
+  background-color: #fff;
+  overflow-y: auto; /* ナビゲーションが長い場合にスクロールできるようにする */
+  transition: 250ms; /* ナビゲーションのスライドイン/アウトにかける秒数 */
+  transform: translateX(-100%); /* 横幅と同じ分だけ左側に移動させる */
+  z-index: 2; /* ハンバーガーメニューの要素の中では一番上に表示されるようにする */
+}
+
+#hamburgermenu.active .hamburgermenu__nav {
+  transform: translateX(0);
+}
+
+/* マスク */
+.hamburgermenu__mask {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.264);
+  visibility: hidden;
+  z-index: 1;
+}
+
+#hamburgermenu.active .hamburgermenu__mask {
+  visibility: visible;
+}
+
+@media screen and (max-width: 648px) {
+  .header_pc {
+    display: none;
+  }
+  .header_sp {
+    display: block;
+  }
+  .header__nav_link::before {
+    content: "";
+    width: 0%;
+    height: 0px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+  }
+}/*# sourceMappingURL=style.css.map */
