@@ -1,0 +1,35 @@
+@charset "utf-8";
+header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+header nav ul {
+    margin: 0;
+    margin-right: 10px;
+}
+header nav ul li {
+    width: 200px;
+    height : 70px;
+    float: left;
+    text-align: center;
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+header nav ul li a {
+    text-decoration: none;
+    font-size: 1.7rem;
+    /* color: black; */
+    color: rgb(0, 90, 200);
+    display: block;
+    height: 50px;
+    padding-top: 20px;
+}
+header nav ul li a:hover{
+    /* font-size: larger; */
+    font-weight: bolder;
+    background-color: rgb(0, 90, 200);
+    color: white;
+}
