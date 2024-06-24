@@ -1,10 +1,30 @@
-<header>
-<nav>
-    <ul class="clear-fix">
-        <li><a href="index.html">ホーム</a></li>
-        <li><a href="map.html">地図</a></li>
-        <li><a href="timetable.html">タイムテーブル</a></li>
-        <li><a href="circles.html">サークル</a></li>
-    </ul>
-</nav>
+<header class="header"> <!-- ヘッダー　スマホ版はハンバーガーメニュー -->
+    <nav class="header__nav header_pc">
+        <a href="" class="header__nav_link header_pc header__nav_img"><img src="images/rogo5.png" alt="" class="header__nav_img"></a>
+        <div class="header__nav__content">
+            <a href="" class="header__nav__content_link header_pc">企画</a>
+            <a href="" class="header__nav__content_link header_pc">音楽会</a>
+            <a href="" class="header__nav__content_link header_pc">スケジュール</a>
+            <a href="" class="header__nav__content_link header_pc">校内図</a>
+            <a href="" class="header__nav__content_link header_pc">アクセス</a>
+            <a href="" class="header__nav__content_link header_pc">お知らせ</a>
+        </div>
+        
+    </nav>
+    
+    <!-- スマホ版のハンバーガーメニュー -->
+    
+    <div id="hamburgermenu">
+        <div id="menu-toggle" class="hamburgermenu__icon material-icons"><img src="./images/icon_menu.svg" class="header_sp"></div>
+        <nav class="hamburgermenu__nav">
+            <a href="" class="header__nav__content_link header_sp">企画</a>
+            <a href="" class="header__nav__content_link header_sp">音楽会</a>
+            <a href="" class="header__nav__content_link header_sp">スケジュール</a>
+            <a href="" class="header__nav__content_link header_sp">校内図</a>
+            <a href="" class="header__nav__content_link header_sp">アクセス</a>
+            <a href="" class="header__nav__content_link header_sp">お知らせ</a>
+        </nav>
+        <div id="mask" class="hamburgermenu__mask"></div>
+    </div>
+    <script src="javascript/main.js"></script>
 </header>
