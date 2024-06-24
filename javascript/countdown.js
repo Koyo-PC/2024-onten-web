@@ -1,8 +1,8 @@
 'use strict';
 
 function countdown(){
-    const targetDate = new Date( 2024, 8, 22, 9, 0, 0);
-    const endgetDate = new Date( 2024, 8, 22, 16, 0, 0);
+    const targetDate = new Date( 2024, 8, 21, 9, 0, 0);
+    const endgetDate = new Date( 2024, 8, 21, 16, 0, 0);
     const now = new Date();
     const distance = targetDate.getTime() - now.getTime();
     const span = endgetDate.getTime() - now.getTime();
