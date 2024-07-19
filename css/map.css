@@ -83,14 +83,12 @@
     font-size: 2rem;
     word-wrap: break-word;
     display:flex;
-    font-family: "makinas-4-square";
 }
 .ftext2{
     /* line-height: 1.2; */
     font-size: 1rem;
     word-wrap: break-word;
     display:flex;
-    font-family: "makinas-4-square";
 }
 .long-element{
     position: absolute;
