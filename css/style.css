@@ -13,6 +13,9 @@ main{
     margin-top: 100px;
     padding-top: 10px;
 }
+h1{
+    color: fuchsia;
+}
 @media screen and (max-width: 648px) {
     main{
         margin-top: auto;

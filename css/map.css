@@ -13,8 +13,6 @@
     color:white;
 }
 .map-title{
-    font-family: "makinas-4-square";
-    color:black;
     margin: 10px 0;
     font-size: 2rem;
     font-weight: 700;
@@ -46,11 +44,12 @@
 }
 .map-element{
     position: absolute;
-    background-color: #000b;
+    background-color: rgba(0, 0, 0, 0.863);
     cursor: pointer;
     display: grid;
     place-content: center;
     color: #e2e2e2;
+    font-weight: bold;
     text-align: center;
 }
 .map-felement{
