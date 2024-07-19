@@ -1,9 +1,12 @@
 #countdown-box{
     text-align: center;
 }
-#data {
-    font-size: 90px;
+#countdown-data {
+    font-size: 800%;
 }
 #countdown{
-    font-size: 70px;
+    font-size: 500%;
+}
+#countdown-title{
+    font-size:200%;
 }
