@@ -44,13 +44,14 @@
 }
 .map-element{
     position: absolute;
-    background-color: rgba(0, 0, 0, 0.863);
+    background-color: rgba(0,0,0,0.6);
     cursor: pointer;
     display: grid;
     place-content: center;
     color: #e2e2e2;
     font-weight: bold;
     text-align: center;
+    border: #303030 2px solid;
 }
 .map-felement{
     position: absolute;
@@ -74,7 +75,7 @@
 }
 .map-link-name{
     line-height: 1.2;
-    font-size: 10px;
+    font-size: 0.8rem;
     word-wrap: break-word;
     display:flex;
 }
@@ -89,30 +90,6 @@
     font-size: 1rem;
     word-wrap: break-word;
     display:flex;
-}
-.long-element{
-    position: absolute;
-    min-width: 30px;
-    width: 60px;
-    left: -40px;
-    line-height: 30px;
-    text-align: center;
-    font-weight: 700;
-    color: #fff;
-    display: inline-block;
-}
-
-.circle_long_element{
-    margin-bottom: 20px;
-    position: relative;
-    border: #da3e50 solid;
-    border-width: 0 0 0px 30px;
-    color: #fff;
-    line-height: 30px;
-    font-size: 1rem;
-    font-weight: 400;
-    justify-content: space-around;
-    padding-left: 8px;
 }
 .map-toilet-room{
     overflow: hidden;
@@ -142,11 +119,20 @@
     font-family: "makinas-4-square";
 }
 .exp{
-    font-family: "makinas-4-square";
-    font-size:20px;
-    color:white;
+    font-size:1rem
     /* margin:0 auto; */
     /* display:block; */
+}
+.button{
+    display: block;
+    float: left;
+    width: 20%;
+    height: 30px;
+    text-align: center;
+    border: #303030 1px solid;
+}
+.button:hover{
+    background-color: #edede9;
 }
 @media screen and (min-width: 481px){
     .button-container {
