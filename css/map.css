@@ -127,7 +127,7 @@
     display: block;
     float: left;
     width: 20%;
-    height: 30px;
+    height:auto;
     text-align: center;
     border: #303030 1px solid;
 }
