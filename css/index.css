@@ -1,12 +1,15 @@
-#countdown-box{
-    text-align: center;
+#countdown-box {
+  text-align: center;
 }
+
 #countdown-data {
-    font-size: 800%;
+  font-size: 800%;
 }
-#countdown{
-    font-size: 500%;
+
+#countdown {
+  font-size: 4rem;
 }
-#countdown-title{
-    font-size:200%;
-}
+
+#countdown-title {
+  font-size: 1.5rem;
+}/*# sourceMappingURL=index.css.map */

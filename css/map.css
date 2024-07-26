@@ -1,206 +1,216 @@
-.map-main{
+.map-main {
+  position: relative;
+  padding: 50px 10%;
+  font-weight: 400;
+  overflow-x: hidden;
+}
+
+.button-container {
+  width: 70%;
+  margin: 0 auto;
+  /* padding-top:50px; */
+}
+
+.map-text {
+  color: white;
+}
+
+.map-title {
+  margin: 10px 0;
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.map {
+  margin: 0 -5vw;
+  padding: 20px;
+}
+
+.each-map {
+  width: 100%;
+  border: #303030 3px solid;
+}
+
+.map-scroll {
+  overflow: auto;
+  width: 100%;
+}
+
+.map-image {
+  position: relative;
+  vertical-align: bottom;
+  width: 100%;
+}
+
+.booth-container {
+  position: absolute;
+  top: 15%;
+  bottom: 15%;
+  left: 12.75%;
+  right: 12.75%;
+}
+
+.map-element {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+  display: grid;
+  place-content: center;
+  color: #e2e2e2;
+  font-weight: bold;
+  text-align: center;
+  border: #303030 2px solid;
+}
+
+.map-felement {
+  position: absolute;
+  /* background-color: #000b; */
+  cursor: pointer;
+  display: grid;
+  place-content: center;
+  /* color: #e2e2e2; */
+  text-align: center;
+}
+
+.map-link-room {
+  position: absolute;
+  padding: 0px 8px;
+  overflow: hidden;
+  font-size: 10px;
+  top: 0;
+  left: 0;
+  border-top: none;
+  border-left: none;
+  text-align: center;
+}
+
+.map-link-name {
+  line-height: 1.2;
+  font-size: 0.8rem;
+  word-wrap: break-word;
+  display: flex;
+}
+
+.ftext {
+  /* line-height: 1.2; */
+  font-size: 2rem;
+  word-wrap: break-word;
+  display: flex;
+}
+
+.ftext2 {
+  /* line-height: 1.2; */
+  font-size: 1rem;
+  word-wrap: break-word;
+  display: flex;
+}
+
+.map-toilet-room {
+  overflow: hidden;
+  font-size: 10px;
+  border-top: none;
+  border-left: none;
+  text-align: center;
+}
+
+.map-bottom-toilet-room {
+  overflow: hidden;
+  font-size: 7px;
+  border-top: none;
+  border-left: none;
+  text-align: center;
+}
+
+.display-flex {
+  display: flex;
+  position: relative;
+}
+
+.place {
+  position: absolute;
+  left: 70%;
+  font-family: "makinas-4-square";
+}
+
+.exp {
+  font-size: 1rem;
+}
+
+.button {
+  display: block;
+  float: left;
+  width: 20%;
+  height: 60px;
+  text-align: center;
+  border: #303030 1px solid;
+}
+
+.button:hover {
+  background-color: #edede9;
+}
+
+@media screen and (min-width: 481px) {
+  .button-container {
+    display: flex;
+  }
+  .map-content {
+    display: none;
+    padding: 10px;
+  }
+  footer {
     position: relative;
-    padding: 50px 10%;
-    font-weight: 400;
-    overflow-x: hidden;
-}
-.button-container{
-    width:70%;
-    margin:0 auto;
-    /* padding-top:50px; */
-}
-.map-text{
-    color:white;
-}
-.map-title{
-    margin: 10px 0;
-    font-size: 2rem;
-    font-weight: 700;
-    text-align: center;
-}
-.map{
-    margin: 0 -5vw;
-    padding: 20px;
-}
-.each-map{
-    width:100%;
-    border: #303030 3px solid;
-}
-.map-scroll{
-    overflow: auto;
+    display: block;
     width: 100%;
+    padding: 50px;
+    background-color: #303030;
+    color: #e2e2e2;
+    margin-top: 0px;
+  }
 }
-.map-image{
+@media screen and (max-width: 480px) {
+  .map {
+    margin: 0 -20vw;
+    padding: 20px;
+  }
+  .map-scroll {
+    overflow: auto;
+  }
+  .map-image {
     position: relative;
     vertical-align: bottom;
     width: 100%;
-}
-.booth-container{
-    position: absolute;
-    top: 15%;
-    bottom: 15%;
-    left: 12.75%;
-    right: 12.75%;
-}
-.map-element{
-    position: absolute;
-    background-color: rgba(0,0,0,0.6);
-    cursor: pointer;
-    display: grid;
-    place-content: center;
-    color: #e2e2e2;
-    font-weight: bold;
-    text-align: center;
-    border: #303030 2px solid;
-}
-.map-felement{
-    position: absolute;
-    /* background-color: #000b; */
-    cursor: pointer;
-    display: grid;
-    place-content: center;
-    /* color: #e2e2e2; */
-    text-align: center;
-}
-.map-link-room{
-    position: absolute;
-    padding: 0px 8px;
-    overflow: hidden;
-    font-size: 10px;
-    top: 0;
-    left: 0;
-    border-top: none;
-    border-left: none;
-    text-align: center;
-}
-.map-link-name{
-    line-height: 1.2;
-    font-size: 0.8rem;
-    word-wrap: break-word;
-    display:flex;
-}
-.ftext{
-    /* line-height: 1.2; */
-    font-size: 2rem;
-    word-wrap: break-word;
-    display:flex;
-}
-.ftext2{
-    /* line-height: 1.2; */
-    font-size: 1rem;
-    word-wrap: break-word;
-    display:flex;
-}
-.map-toilet-room{
-    overflow: hidden;
-    font-size: 10px;
-    border-top: none;
-    border-left: none;
-    text-align: center;
-}
-.map-bottom-toilet-room{
-    overflow: hidden;
-    font-size: 7px;
-    border-top: none;
-    border-left: none;
-    text-align: center;
-}
-.circle-d{
-    color: white;
-    font-family: "makinas-4-square";
-}
-.display-flex{
-    display: flex;
+    /* height: 100%; */
+  }
+  .map-main {
     position: relative;
-}
-.place{
-    position: absolute;
-    left:70%;
-    font-family: "makinas-4-square";
-}
-.exp{
-    font-size:1rem
-    /* margin:0 auto; */
-    /* display:block; */
-}
-.button{
-    display: block;
-    float: left;
-    width: 20%;
-    height:60px;
-    text-align: center;
-    border: #303030 1px solid;
-}
-.button:hover{
-    background-color: #edede9;
-}
-@media screen and (min-width: 481px){
-    .button-container {
-        display: flex;
-    }
-
-    .button {
-        /* border:3px solid gray; */
-    }
-
-    .map-content {
-        display: none;
-        padding: 10px;
-    }
-    footer {
-        position: relative;
-        display: block;
-        width: 100%;
-        padding: 50px;
-        background-color: #303030;
-        color: #e2e2e2;
-        margin-top: 0px;
-    }
-}
-@media screen and (max-width: 480px){
-    .map{
-        margin: 0 -20vw;
-        padding: 20px;
-    }
-    .map-scroll{
-        overflow: auto;
-    }
-    .map-image{
-        position: relative;
-        vertical-align: bottom;
-        width: 100%;
-        /* height: 100%; */
-    }
-    .map-main{
-        position: relative;
     padding: 50px 10%;
     font-weight: 400;
     overflow-x: hidden;
-    }
-    .each-map{
-        width: 200%;
-    }
-    .nazo{
-        box-sizing: border-box;
+  }
+  .each-map {
+    width: 200%;
+  }
+  .nazo {
+    box-sizing: border-box;
     border-style: solid;
     border-width: 0;
-    }
-    .booth-container {
-        width: 149%;
-        position: absolute;
-        top: 15%;
-        bottom: 15%;
-        left: 26%;
-        right: 12.75%;
-    }
-    footer {
-        position: relative;
-        display: block;
-        width: 100%;
-        padding: 50px;
-        background-color: #303030;
-        color: #e2e2e2;
-        margin-top: 0px;
-    }
-    
-}
+  }
+  .booth-container {
+    width: 149%;
+    position: absolute;
+    top: 15%;
+    bottom: 15%;
+    left: 26%;
+    right: 12.75%;
+  }
+  footer {
+    position: relative;
+    display: block;
+    width: 100%;
+    padding: 50px;
+    background-color: #303030;
+    color: #e2e2e2;
+    margin-top: 0px;
+  }
+}/*# sourceMappingURL=map.css.map */

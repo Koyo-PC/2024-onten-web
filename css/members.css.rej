@@ -1,0 +1,11 @@
+diff a/css/members.css b/css/members.css	(rejected hunks)
+@@ -0,0 +1,8 @@
++#member_1 {
++    margin: 24mm;
++    color: red;
++}
++.a{
++    color: #290fea;
++    background-color: black;
++}
+\ No newline at end of file
