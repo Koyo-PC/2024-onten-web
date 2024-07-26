@@ -1,0 +1,14 @@
+.timetable-title {
+  text-align: center;
+  font-size: 2rem;
+}
+.timetable-main {
+  width: 80%;
+  text-align: center;
+}
+.timetable-box {
+  position: relative;
+}
+.timetable-header {
+  position: fixed;
+}/*# sourceMappingURL=timetable.css.map */
