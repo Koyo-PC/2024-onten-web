@@ -24,7 +24,6 @@
 }
 .each-map{
     width:100%;
-    border: #303030 3px solid;
 }
 .map-scroll{
     overflow: auto;
@@ -52,6 +51,23 @@
     font-weight: bold;
     text-align: center;
     border: #303030 2px solid;
+}
+.map{
+    &-clab{
+        background-color: rgb(10, 10, 255);
+    }
+    &-honbu{
+        background-color: rgb(10, 90, 10);
+    }
+    &-female{
+        background-color: rgb(144, 0, 0);
+    }
+    &-male{
+        background-color: rgb(0, 0, 120);
+    }
+    &-stage{
+        background-color: rgb(183, 183, 5);
+    }
 }
 .map-felement{
     position: absolute;
@@ -184,14 +200,7 @@
         left: 26%;
         right: 12.75%;
     }
-    footer {
-        position: relative;
-        display: block;
-        width: 100%;
-        padding: 50px;
-        background-color: #303030;
-        color: #e2e2e2;
-        margin-top: 0px;
+    .button{
+        font-size: 20px;
     }
-    
 }

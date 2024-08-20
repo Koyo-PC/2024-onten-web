@@ -23,13 +23,13 @@ function countdown(){
     else hour=calshours;
     days = calsdays;
     if(distance >= 0){
-        document.getElementById("countdown").innerText=days+":"+hour+":"+min+ ":" + sec ;
+        document.getElementsByClassName("index-countdown-content")[0].innerText=days+":"+hour+":"+min+ ":" + sec ;
     }
     else if(span >= 0){
-        document.getElementById("countdown").innerText="音展当日！！";
+        document.getElementsByClassName("index-countdown-content")[0].innerText="音展当日！！";
     }
     else{
-      document.getElementById("countdown").innerText="音展終了！！";
+        document.getElementsByClassName("index-countdown-content")[0].innerText="音展終了！！";
     }
 }
 

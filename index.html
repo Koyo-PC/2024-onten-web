@@ -15,15 +15,47 @@
         <link rel="stylesheet" href="css/destyle.css">
         <link rel="icon" href="images/favicon.png">
         <script src = "javascript/countdown.js"></script>
+        <script type="text/javascript">
+            function sleepSetTimeout(ms, callback) {
+                setTimeout(callback, ms);
+            }
+            window.onload = function() {
+                var cont = document.getElementById("load-img");
+                cont.style.zIndex = 200000;
+                sleepSetTimeout(6000, () => cont.style.opacity = "0");
+                sleepSetTimeout(9000, () => cont.style.display = "none");
+            };
+          </script>
     </head>
     <body>
+        <div id = "load-img">
+            <video autoplay muted playsinline src="images\0001-0160.mp4" width="100%"height="100%"></video>
+        </div>
         <div id="header"></div>
 
         <main>
-            <div id = "countdown-box">
-                <h1 id = "countdown-data">9.22 SUN</h1>
-                <p id = "countdown-title">2024年音楽と展覧の会まで</p>
-                <span id = "countdown"></span>
+            <div class = "index-top">
+                <img src = "images\rogo5.png" class = "index-top-img">
+                <h1 class = "index-top-title">第77回<br>甲陽学院高等学校　音楽と展覧の会</h1>
+                <h1 class = "index-top-data">9.22 SUN</span><br>9:00~15:00</h1>
+            </div>
+            <div class = "index-countdown-box">
+                <p class = "index-countdown-title">音展2024まで</p>
+                <span class = "index-countdown-content"></span>
+            </div>
+            <div class = "index-message">
+                <h2 class = "index-message-title">あいさつ</h2>
+                <p class = "index-message-content">
+                    　平安時代の頃より、日本人は「花が咲く」というと桜の花を連想してきました。新しい季節の「はじまり」の象徴であるだけでなく、すぐに散ってしまう「はかなさ」を持つ桜の花は今もなお多くの人に愛されており、日本人の心といっても過言ではないでしょう。<br>
+                    　春には桜吹雪が花筏となって流れる夙川の傍に位置する甲陽学院は、そんな桜の花と百年を超える歴史を共に歩んできました。<br>
+                    　我々が入学した頃には猛威を振るっていた感染症もすっかり下火となった今日が、音展にたった一瞬の「はかなさ」を持つ青春を燃やす甲陽生、音展を成功へと結んでくださるご来場の皆様、そして長きにわたり甲陽生と共に歩んできた先生方が一緒に笑顔を咲かせる「はじまり」の一日になれば幸いです。<br>
+                    　どうぞ、お楽しみください。
+                </p>
+                <p class="index-message-name">音展委員長 小松 冬弥</p>
+                <p class = "index-message-content">
+                    「桜桃梅李一時の春」は初代伊賀校長の愛誦された句です。自由な環境にあって、生徒の持つ強い自主性と豊かな個性を花々に準え建学の理念としました。昨年，音展はコロナ禍の困難を経て名実共に「New ERA」に突入しました。新時代到来後最初の音展のテーマが「咲－show—」です。生徒と伊賀先生、それぞれが音展と建学の理念の象徴として選んだモチーフが自由に咲き誇る花であるとはなんとも感慨深いものがあります。戦後より音展はその外形を大きく変えてきましたが，建学以来伊賀先生から生徒に継受された理想は変らずより強固になっていると感じます。進化し続ける音展を楽しみながら、その底流にある甲陽の精神を，感じて頂ければ幸いです。
+                </p>
+                <p class="index-message-name">生徒会長 永田 一真</p>
             </div>
         </main>
 
