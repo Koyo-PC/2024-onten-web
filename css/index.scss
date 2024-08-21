@@ -53,9 +53,10 @@
             margin-bottom: 20px;
         }
         &-content{
+            margin: 5px;
+            margin-left: 5%;
             width:90%;
             font-size: 1.2rem;
-            margin: 5px;
             text-align: left;
         }
         &-name{
@@ -63,6 +64,7 @@
             margin: 5px;
             text-align: right;
             margin-bottom: 40px;
+            margin-right: 5%;
         }
     }
 }
