@@ -1,12 +1,106 @@
-#countdown-box{
-    text-align: center;
+#load-img-pc{
+    position: fixed;
+    top:0;left:0;
+    width: 100%;
+    height:100%;
+    background-color: black;
+    transition: opacity 3s;
 }
-#countdown-data {
-    font-size: 800%;
+#load-img-phone{
+    display: none;
+    position: fixed;
+    top:0;left:0;
+    width: 100%;
+    height:100%;
+    background-color: black;
+    transition: opacity 3s;
 }
-#countdown{
-    font-size: 4rem;
+.index{
+    &-top{
+        text-align: center;
+        margin-bottom: 100px;
+        &-title{
+            font-size: 2rem;
+        }
+        &-img{
+            width: 40%;
+            margin-bottom: 50px;
+        }
+        &-data{
+            font-size: 4rem;
+        }
+    }
+    &-countdown{
+        &-box{
+            text-align: center;
+            margin-bottom: 100px;
+        }
+        &-content{
+            font-size: 4rem;
+            color:#e95295
+        }
+        &-title{
+            font-size: 2rem;
+        }
+    }
+    &-message{
+        width: 60%;
+        margin-left: 20%;
+        &-title{
+            font-size: 2.5rem;
+            border-bottom: 2px #e95295 solid;
+            border-left:6px #e95295 solid;
+            margin-bottom: 20px;
+        }
+        &-content{
+            width:90%;
+            font-size: 1.2rem;
+            margin: 5px;
+            text-align: left;
+        }
+        &-name{
+            font-size: 1.2rem;
+            margin: 5px;
+            text-align: right;
+            margin-bottom: 40px;
+        }
+    }
 }
-#countdown-title{
-    font-size:1.5rem;
+
+@media screen and (max-width: 480px) {
+    #load-img{
+        &-pc{display: none;}
+        &-phone{display: block;}
+    }
+    .index{
+        &-top{
+            &-img{
+                width: 60%;
+            }
+            &-title{
+                font-size:1rem;
+            }
+        }
+        &-countdown{
+            &-content{
+                font-size: 4rem;
+            }
+            &-data{
+                font-size: 4rem;
+            }
+            &-title{
+                font-size: 1.5rem;
+            }
+        }
+        &-message{
+            width: 90%;
+            margin-left: 5%;
+            &-content{
+                font-size: 0.9rem;
+            }
+            &-name{
+                font-size: 0.9rem;
+            }
+        }
+    }
 }

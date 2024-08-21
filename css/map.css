@@ -19,7 +19,9 @@
   margin: 10px 0;
   font-size: 2rem;
   font-weight: 700;
-  text-align: center;
+  border-bottom: 2px #e95295 solid;
+  border-left: 6px #e95295 solid;
+  margin-bottom: 20px;
 }
 
 .map {
@@ -29,7 +31,6 @@
 
 .each-map {
   width: 100%;
-  border: #303030 3px solid;
 }
 
 .map-scroll {
@@ -61,6 +62,13 @@
   font-weight: bold;
   text-align: center;
   border: #303030 2px solid;
+}
+
+.map-female {
+  background-color: rgb(144, 0, 0);
+}
+.map-male {
+  background-color: rgb(0, 0, 255);
 }
 
 .map-felement {
@@ -101,7 +109,8 @@
 
 .ftext2 {
   /* line-height: 1.2; */
-  font-size: 1rem;
+  background-color: white;
+  font-size: 1.4rem;
   word-wrap: break-word;
   display: flex;
 }
@@ -140,14 +149,27 @@
 .button {
   display: block;
   float: left;
-  width: 20%;
+  margin: 1%;
+  width: 18%;
   height: 60px;
   text-align: center;
   border: #303030 1px solid;
+  border-radius: 20px;
 }
-
-.button:hover {
-  background-color: #edede9;
+.button-1:hover {
+  background-color: #FF0007;
+}
+.button-2:hover {
+  background-color: #FFF200;
+}
+.button-3:hover {
+  background-color: #00D521;
+}
+.button-4:hover {
+  background-color: #00ABFA;
+}
+.button-5:hover {
+  background-color: #3D47D4;
 }
 
 @media screen and (min-width: 481px) {
@@ -157,15 +179,6 @@
   .map-content {
     display: none;
     padding: 10px;
-  }
-  footer {
-    position: relative;
-    display: block;
-    width: 100%;
-    padding: 50px;
-    background-color: #303030;
-    color: #e2e2e2;
-    margin-top: 0px;
   }
 }
 @media screen and (max-width: 480px) {
@@ -204,13 +217,7 @@
     left: 26%;
     right: 12.75%;
   }
-  footer {
-    position: relative;
-    display: block;
-    width: 100%;
-    padding: 50px;
-    background-color: #303030;
-    color: #e2e2e2;
-    margin-top: 0px;
+  .button {
+    font-size: 20px;
   }
 }/*# sourceMappingURL=map.css.map */
