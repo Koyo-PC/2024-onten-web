@@ -80,7 +80,7 @@
                 width: 60%;
             }
             &-title{
-                font-size:1rem;
+                font-size:2rem;
             }
         }
         &-countdown{
@@ -97,6 +97,9 @@
         &-message{
             width: 90%;
             margin-left: 5%;
+            &-title{
+                font-size: 2rem;
+            }
             &-content{
                 font-size: 0.9rem;
             }

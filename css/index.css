@@ -80,7 +80,7 @@
     width: 60%;
   }
   .index-top-title {
-    font-size: 1rem;
+    font-size: 2rem;
   }
   .index-countdown-content {
     font-size: 4rem;
@@ -94,6 +94,9 @@
   .index-message {
     width: 90%;
     margin-left: 5%;
+  }
+  .index-message-title {
+    font-size: 2rem;
   }
   .index-message-content {
     font-size: 0.9rem;
