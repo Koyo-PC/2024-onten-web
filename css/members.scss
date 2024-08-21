@@ -1,6 +1,19 @@
 .member{
+    &-title{
+        width: 80%;
+        margin-left: 10%;
+        font-size: 2.5rem;
+            border-bottom: 2px #e95295 solid;
+            border-left:6px #e95295 solid;
+            margin-bottom: 20px;
+    }
     &-all{
+        margin-top: 10px;
          font-size: 2rem;
+        text-align: center;
+    }
+    &-name{
+        margin-top: 5px;
         text-align: center;
     }
 }
