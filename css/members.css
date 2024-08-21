@@ -7,11 +7,12 @@
   margin-bottom: 20px;
 }
 .member-all {
-  margin-top: 10px;
+  margin-top: 25px;
   font-size: 2rem;
   text-align: center;
 }
 .member-name {
-  margin-top: 5px;
+  font-size: 125%;
+  margin-top: 10px;
   text-align: center;
 }/*# sourceMappingURL=members.css.map */
